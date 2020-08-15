@@ -1,3 +1,5 @@
+Alex Foreman
+
 # Object Relations Practice
 
 We have four models: `Recipe`, `Restaurant`, `RestuarantOwner` and `MenuItem`. 
