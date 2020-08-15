@@ -29,76 +29,76 @@ Deliverables use the notation `#` for instance methods, and `.` for class method
 
 
 #### Recipe
-- `Recipe#initialize(name, description)`
+<!-- - `Recipe#initialize(name, description)`
   - A recipe should be initialized with a `name` (string) and a `description` (string).
   - The name **cannot** be changed after the recipe is initialized.
   - The description can be changed after the recipe is initialized.
   - Both name and description are readable
 - `Recipe.all`
-  - Returns an array of all recipe instances that have been created.
+  - Returns an array of all recipe instances that have been created. -->
 
 #### Restaurant
-- `Restaurant#initialize(owner, name, star_rating)`
+<!-- - `Restaurant#initialize(owner, name, star_rating)`
   - A restaurant should be initialized with a `RestaurantOwner` instance, a `name` (string) and a `star_rating` (integer).
   - The name and star_rating can be changed after the restaurant is initialized.
   - Both name and star_rating are readable.
 - `Restaurant.all`
-  - Returns an array of all restaurant instances that have been created.
+  - Returns an array of all restaurant instances that have been created. -->
 
 #### RestaurantOwner
-- `RestaurantOwner#initialize(name, age)`
+<!-- - `RestaurantOwner#initialize(name, age)`
   - A restaurant_owner should be initialized with a `name` (string) and an `age` (integer).
   - The name and age can be changed after the restaurant_owner is initialized.
   - Both name and age are readable.
 - `RestaurantOwner.all`
-  - Returns an array of all restaurant_owner instances that have been created.
+  - Returns an array of all restaurant_owner instances that have been created. -->
 
 #### MenuItem
-- `MenuItem#initialize(restaurant, recipe, price)`
+<!-- - `MenuItem#initialize(restaurant, recipe, price)`
   - A menu_item should be initialized with a `Restaurant` instance, a `Recipe` instance and a `price` (float).
   - The price can be changed after the menu_item is initialized.
 - `MenuItem.all`
-  - Returns an array of all menu_item instances that have been created.
+  - Returns an array of all menu_item instances that have been created. -->
 
 
 
 ### Object Relationship Methods
 
 #### Recipe
-- `Recipe#menu_items`
+<!-- - `Recipe#menu_items`
   - returns an array of all the `MenuItem` instances for the `Recipe`.
-- `Recipe#restaurants`
-  - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu.
+- `Recipe#restaurants` -->
+  <!-- - returns an array of all the `Restaurant` instances that have the `Recipe` on their menu. -->
 
 #### Restaurant
-- `Restaurant#menu_items`
-  - returns an array of all the `MenuItem` instances for the `Restaurant`.
-- `Restaurant#owner`
-  - returns the `RestaurantOwner` instance associated with the `Restaurant` instance
-- `Restaurant#recipes`
-  - returns an array of all the `Recipe` instances that are on this `Restaurant`s menu.
+<!-- - `Restaurant#menu_items`
+  - returns an array of all the `MenuItem` instances for the `Restaurant`. -->
+<!-- - `Restaurant#owner`
+  - returns the `RestaurantOwner` instance associated with the `Restaurant` instance -->
+<!-- - `Restaurant#recipes`
+  - returns an array of all the `Recipe` instances that are on this `Restaurant`s menu. -->
 
 #### RestaurantOwner
-- `RestaurantOwner#restaurants`
-  - returns an array of `Restaurant` instances associated with the `RestaurantOwner` instance.
+<!-- - `RestaurantOwner#restaurants`
+  - returns an array of `Restaurant` instances associated with the `RestaurantOwner` instance. -->
 - `RestaurantOwner#menu_items`
   - returns an array of `MenuItem` instances associated with any of the `RestaurantOwner`s `Restaurant` instances.
 
 #### MenuItem
-- `MenuItem#recipe`
-  - returns the `Recipe` instance associated with the `MenuItem` instance
-- `MenuItem#restaurant`
-  - returns the `Restaurant` instance associated with the `MenuItem` instance
-- `MenuItem#owner`
-  - returns the `Owner` instance associated with the `MenuItem` instance
+<!-- - `MenuItem#recipe`
+  - returns the `Recipe` instance associated with the `MenuItem` instance -->
+<!-- - `MenuItem#restaurant`
+  - returns the `Restaurant` instance associated with the `MenuItem` instance -->
+<!-- - `MenuItem#owner`
+  - returns the `Owner` instance associated with the `MenuItem` instance -->
 
 
 
 ### Aggregate and Association Methods
 
 #### Recipe
-- `Recipe#average_price`
-    - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance. 
+<!-- - `Recipe#average_price`
+    - returns the average price (integer) for all `MenuItem` instances of this `Recipe` instance.  -->
 - `Recipe#highest_price`
   - returns the highest price (integer) for all `MenuItem` instances of this `Recipe` instance. 
 - `Recipe#cheapest_restaurant`
