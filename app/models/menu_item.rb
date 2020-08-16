@@ -17,8 +17,10 @@ class MenuItem
         self.restaurant.restaurant_owner
     end
 
-    
-
+    def self.most_expensive_item
+        array = MenuItem.all.collect{|menu| menu.price}
+        array.max
+    end
 
 
 end

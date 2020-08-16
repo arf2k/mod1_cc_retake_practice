@@ -9,6 +9,7 @@ end
 pasta = Recipe.new("Pasta", "Noodles with marina")
 chicken = Recipe.new("fried chicken", "breaded chicken fried")
 steak = Recipe.new("grilled steak", "ny strip in sauce")
+fish = Recipe.new("steamed fish", "fishy fishy")
 
 pablo = RestaurantOwner.new("Pablo", 39)
 antonio = RestaurantOwner.new("Antonio", 25)

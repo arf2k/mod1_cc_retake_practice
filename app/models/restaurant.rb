@@ -25,5 +25,23 @@ class Restaurant
         end
     end
 
+    def has_dish?(recipe)
+      if self.recipes.include?(recipe)
+        true 
+      else
+        false
+      end
+    end
+
+    def self.highest_rated
+        self.all.reduce do |rest1, rest2|
+            if rest1.star_rating > rest2.star_rating
+                rest1 
+            else
+                rest2
+            end
+        end
+    end
+        
 
 end
