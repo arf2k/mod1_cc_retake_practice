@@ -26,6 +26,7 @@ ny_steak = MenuItem.new(olives, steak, 25.00)
 red_chicken = MenuItem.new(olives, chicken, 16.00)
 spaghetti = MenuItem.new(brickhouse, pasta, 30.00)
 
+# CARYN SAYS: good amount of instances here to facilitate testing! 
 
 
 

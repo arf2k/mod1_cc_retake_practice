@@ -14,10 +14,13 @@ class MenuItem
     end
 
     def owner
+        # CARYN SAYS: good!!
         self.restaurant.restaurant_owner
     end
 
     def self.most_expensive_item
+        # CARYN SAYS: right now, this will return the amount and not the MenuItem instance
+        # can you fix that? 
         array = MenuItem.all.collect{|menu| menu.price}
         array.max
     end
